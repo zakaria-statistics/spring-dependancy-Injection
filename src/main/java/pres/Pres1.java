@@ -1,6 +1,6 @@
 package pres;
 
-import dao.DaoImpl;
+import Computer.DaoImpl;
 import ext.DaoImpl2;
 import metier.MetierImpl;
 
