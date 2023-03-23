@@ -1,4 +1,4 @@
-package Computer;
+package computer;
 
 public class Ecran implements VGA{
     @Override

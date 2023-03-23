@@ -1,6 +1,6 @@
 package ext;
 
-import Computer.IDao;
+import computer.IDao;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;

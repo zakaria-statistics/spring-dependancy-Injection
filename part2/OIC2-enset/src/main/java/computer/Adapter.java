@@ -1,10 +1,18 @@
-package Computer;
+package computer;
 
 public class Adapter implements VGA{
     private HDMI hdmi;
 
     public Adapter(HDMI hdmi) {
         this.hdmi = hdmi;
+    }
+
+    public void setHdmi(HDMI hdmi) {
+        this.hdmi = hdmi;
+    }
+
+    public HDMI getHdmi() {
+        return hdmi;
     }
 
     @Override
