@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="adapter" class="computer.Adapter">
+        <constructor-arg ref="tv"></constructor-arg>
+    </bean>
+
+    <bean id="ecran" class="computer.Ecran"></bean>
+    <bean id="clavier" class="computer.Clavier"></bean>
+    <bean id="souris" class="computer.Souris"></bean>
+    <bean id="vp" class="computer.VP"></bean>
+    <bean id="tv" class="computer.TV"></bean>
+
+    <bean id="uc" class="computer.UC">
+        <constructor-arg ref="adapter"></constructor-arg>
+        <constructor-arg ref="clavier"></constructor-arg>
+    </bean>
+
+</beans>
