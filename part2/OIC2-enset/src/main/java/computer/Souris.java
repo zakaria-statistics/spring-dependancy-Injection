@@ -1,5 +1,10 @@
 package computer;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+@Repository("S")
+
 public class Souris implements USB{
     @Override
     public int read() {

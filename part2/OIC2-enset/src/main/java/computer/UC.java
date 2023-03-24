@@ -1,18 +1,20 @@
 package computer;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+@Service()
+
 public class UC {
 
-    private VGA vga;
-    private USB usb;
+     private VGA vga;
+     private USB usb;
 
-    public UC() {
-    }
-    public UC(VGA vga, USB usb) {
+    public UC(@Qualifier("E") VGA vga,@Qualifier("S") USB usb) {
         this.vga = vga;
         this.usb = usb;
-
     }
-
 
 
     public int readData(){
@@ -27,10 +29,6 @@ public class UC {
     public void setVga(VGA vga) {
         this.vga = vga;
     }
-
-
-
-
 
     public void setUsb(USB usb1) {
         this.usb = usb;

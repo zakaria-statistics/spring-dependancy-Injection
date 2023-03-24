@@ -1,5 +1,10 @@
 package computer;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+@Repository
+
 public class TV implements HDMI{
     public TV() {
     }
