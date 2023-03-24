@@ -11,7 +11,7 @@ public class UC {
      private VGA vga;
      private USB usb;
 
-    public UC(@Qualifier("E") VGA vga,@Qualifier("S") USB usb) {
+    public UC(@Qualifier("A") VGA vga,@Qualifier("S") USB usb) {
         this.vga = vga;
         this.usb = usb;
     }
